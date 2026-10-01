@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Receipt Generator</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script type="module"
+        src="https://pyscript.net/releases/2024.11.1/core.js">
+    </script>
+</head>
+
+<body>
+
+    <nav>
+        <b style="color:white;">☕ OBMC Entrep Fair</b>
+
+        <div>
+            <a href="index.html">SKU Generator</a>
+            <a href="receipt.html">Receipt Generator</a>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <h1>☕ Receipt Generator</h1>
+
+        <h2>OBMC Coffee Shop</h2>
+
+        <h3>Menu</h3>
+
+        <label>
+            <input type="checkbox" id="item1" value="99">
+            Americano
+            <span style="float:right;">₱99</span>
+        </label>
+
+        <label>
+            <input type="checkbox" id="item2" value="129">
+            Spanish Latte
+            <span style="float:right;">₱129</span>
+        </label>
+
+        <label>
+            <input type="checkbox" id="item3" value="189">
+            Cold Brew Malt
+            <span style="float:right;">₱189</span>
+        </label>
+
+        <label>
+            <input type="checkbox" id="item4" value="159">
+            Affogato
+            <span style="float:right;">₱159</span>
+        </label>
+
+        <label>
+            <input type="checkbox" id="item5" value="129">
+            Caramel Macchiato
+            <span style="float:right;">₱129</span>
+        </label>
+
+        <button py-click="create_order">
+            🧾 Create Order
+        </button>
+
+        <div id="show"></div>
+
+    </div>
+
+    <script type="py" src="./main.py"></script>
+
+</body>
+
+</html>
